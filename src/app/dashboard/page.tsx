@@ -7,6 +7,7 @@ import PatientView from '@/components/dashboard/patient-view';
 import DonorView from '@/components/dashboard/donor-view';
 import ProviderView from '@/components/dashboard/provider-view';
 import { Skeleton } from '@/components/ui/skeleton';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 
 async function DashboardContent({ role }: { role: UserRole }) {
   const [onboardingData, userData] = await Promise.all([
