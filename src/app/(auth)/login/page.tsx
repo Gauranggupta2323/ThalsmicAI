@@ -1,10 +1,19 @@
+'use client';
+
 import { Suspense } from 'react';
 import LoginForm from '@/components/auth/login-form';
 import Logo from '@/components/logo';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { useSearchParams } from 'next/navigation';
 
 function LoginContent() {
   return <LoginForm />;
+}
+
+function LoginTitle() {
+    const searchParams = useSearchParams();
+    const role = searchParams.get('role') || 'user';
+    return <>Login as a {role.charAt(0).toUpperCase() + role.slice(1)}</>;
 }
 
 export default function LoginPage() {
@@ -28,13 +37,4 @@ export default function LoginPage() {
       </Card>
     </Suspense>
   );
-}
-
-// Separate component to use useSearchParams
-import { useSearchParams } from 'next/navigation';
-
-function LoginTitle() {
-    const searchParams = useSearchParams();
-    const role = searchParams.get('role') || 'user';
-    return <>Login as a {role.charAt(0).toUpperCase() + role.slice(1)}</>;
 }
