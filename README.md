@@ -1,11 +1,11 @@
 
-# ThalAI Bridge Lite
+# ThalsmicAI
 
 A modern healthcare application focused on blood donation and transfusion management, built with Next.js and powered by generative AI for personalized user experiences.
 
 ## 🩸 Overview
 
-ThalAI Bridge Lite is a simplified healthcare platform that connects patients, blood donors, and healthcare providers. The application leverages AI to provide personalized onboarding experiences and health tips based on user roles.
+ThalsmicAI is a simplified healthcare platform that connects patients, blood donors, and healthcare providers. The application leverages AI to provide personalized onboarding experiences and health tips based on user roles.
 
 ## ✨ Core Features
 
